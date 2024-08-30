@@ -23,7 +23,7 @@ export interface CustomButtonProps {
     textStyles?: string;
     title: string;
     rightIcon?: string;
-    handleClick?: MouseEventHandler<HTMLButtonElement>;
+    handleClick?: () => void;
 }
 
 export interface OptionProps {
