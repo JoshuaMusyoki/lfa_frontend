@@ -1,12 +1,19 @@
-// next.config.js
-const isProd = process.env.NODE_ENV === 'production';
+const { isGithubActions } = require("./isGithubActions");
+
+let assetPrefix = '';
+let basePath = '';
+
+if (isGithubActions) {
+  const repo = process.env.GITHUB_REPOSITORY.replace(/.*?\//, '');
+  basePath = `/${repo}`;
+  assetPrefix = `/${repo}/`;
+}
 
 module.exports = {
-  basePath: isProd ? '/LFA_Project' : '',
-  assetPrefix: isProd ? '/LFA_Project/' : '',
+  basePath,
+  assetPrefix,
   images: {
     unoptimized: true,
   },
-
-  output: "standalone"
+  output: "standalone",
 };
