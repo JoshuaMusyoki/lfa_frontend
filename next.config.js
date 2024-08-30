@@ -1,24 +1,11 @@
-/**
- * @type {import('next').NextConfig}
- */
-
+// next.config.js
 const isProd = process.env.NODE_ENV === 'production';
-const isGithubActions = process.env.GITHUB_ACTIONS || false;
-
-let assetPrefix = '';
-let basePath = '';
-
-if (isGithubActions) {
-  const repo = process.env.GITHUB_REPOSITORY.replace(/.*?\//, '');
-  basePath = `/${repo}`;
-  assetPrefix = `/${repo}/`;
-}
 
 module.exports = {
-  basePath,
-  assetPrefix,
-  images: {
-    unoptimized: true,
-  },
-  output: 'export',
+    basePath: isProd ? '/lfa_frontend' : '',
+    assetPrefix: isProd ? '/lfa_frontend/' : '',
+    images: {
+        unoptimized: true,
+    },
+    output: 'export',
 };
