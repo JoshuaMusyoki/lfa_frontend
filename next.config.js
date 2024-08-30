@@ -1,3 +1,7 @@
+/**
+ * @type {import('next').NextConfig}
+ */
+
 const isProd = process.env.NODE_ENV === 'production';
 const isGithubActions = process.env.GITHUB_ACTIONS || false;
 
@@ -16,5 +20,5 @@ module.exports = {
   images: {
     unoptimized: true,
   },
-  output: "export",
+  output: 'export',
 };
