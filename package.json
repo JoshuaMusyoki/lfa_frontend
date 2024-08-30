@@ -2,7 +2,7 @@
   "name": "lfa_frontend",
   "version": "1.0.0",
   "private": true,
-  "homepage": "https://github.com/JoshuaMusyoki/lfa_frontend.git",
+  "homepage": "https://github.com/JoshuaMusyoki/lfa_frontend",
   "scripts": {
     "dev": "next dev",
     "start": "next start",
