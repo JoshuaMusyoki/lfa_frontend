@@ -1,4 +1,4 @@
-const { isGithubActions } = require("./isGithubActions");
+const isGithubActions = process.env.GITHUB_ACTIONS || false;
 
 let assetPrefix = '';
 let basePath = '';
@@ -15,5 +15,5 @@ module.exports = {
   images: {
     unoptimized: true,
   },
-  output: "standalone",
+  output: "export",
 };
