@@ -1,6 +1,7 @@
-import styles from '../styles/WhatWeDoCommunity.module.css'
+import styles from '../styles/WhatWeDoCommunity.module.css';
 export default function WhatWeDoAsCommunity(){
     return(
+    <main className="flex min-h-screen flex-col items-center justify-between p-24 bg-gray-100">
     <div className={styles.container}>
       <h1>What We Do in the Community</h1>
       <p>We focus on empowering individuals and families by providing resources, education, and support.</p>
@@ -19,5 +20,6 @@ export default function WhatWeDoAsCommunity(){
         </div>
       </div>
     </div>
+    </main>
   );
 }

@@ -1,6 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
-import Logo from '../images/LFALogo.png';
+// import Logo from "./Logo";
+import Logo from '../../../public/images/LFALogo.png';
 import { footerLinks } from "@/contants";
 
 // Define the types
@@ -19,7 +20,7 @@ const Footer = () => (
     <div className="flex flex-wrap justify-between items-start sm:px-16 px-6 py-10 max-w-7xl mx-auto">
       <div className="flex items-center gap-12 mb-12">
         <Image src={Logo} alt="LFA Logo" width={118} height={18} className="object-contain" />
-        
+        {/* <Logo /> */}
       </div>
 
       <div className="flex flex-1 justify-between flex-wrap gap-8">

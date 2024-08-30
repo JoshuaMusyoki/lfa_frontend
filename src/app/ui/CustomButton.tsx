@@ -2,6 +2,7 @@
 import Image from "next/image";
 
 import { CustomButtonProps } from "@/types";
+import ContactUs from "../contact/page";
 
 const Button = ({
     isDisabled,
