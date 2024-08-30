@@ -7,7 +7,7 @@
     "start": "next start",
     "lint": "next lint",
     "build": "next build && next export",
-    "predeploy": "yarn build",
+    "predeploy": "npm build",
     "deploy": "gh-pages -d out"
 
   },
