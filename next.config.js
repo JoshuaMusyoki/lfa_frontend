@@ -1,3 +1,4 @@
+const isProd = process.env.NODE_ENV === 'production';
 const isGithubActions = process.env.GITHUB_ACTIONS || false;
 
 let assetPrefix = '';
