@@ -10,6 +10,7 @@ import image4 from '../../public/images/image4.png';
 import LatestPost from "./socials/twitter_posts";
 import LatestTweets from "./socials/latest-tweets";
 import styles from './styles/Home.module.css';
+import JoinCommunity from "./joinus/page";
 export default function Home() {
   return (
     <main className="flex min-h-screen flex-col items-center justify-between p-24 bg-gray-100">
@@ -28,6 +29,7 @@ export default function Home() {
             <CustomButton
               title="Join Us Today"
               btnType="button"
+              // handleClick={JoinCommunity}
               containerStyles="text-white bg-opacity-0 min-w-[80px] py-4 px-4 flex items-center justify-center"
               />
           </div>
