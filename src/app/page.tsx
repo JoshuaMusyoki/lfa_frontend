@@ -29,7 +29,7 @@ export default function Home() {
             <CustomButton
               title="Join Us Today"
               btnType="button"
-              handleClick={JoinCommunity}
+              // handleClick={JoinCommunity}
               containerStyles="text-white bg-opacity-0 min-w-[80px] py-4 px-4 flex items-center justify-center"
               />
           </div>
