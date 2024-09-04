@@ -21,7 +21,7 @@ export default function Home() {
           alt="Hero Image"
           fill
           style={{ objectFit: "cover" }}
-          className="rounded-xl"
+          className="rounded-xl sm:rounded-lg md:rounded-md"
         />
         {/* Overlay */}
         <div className="absolute inset-0 flex items-end justify-start p-4">
