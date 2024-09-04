@@ -5,8 +5,9 @@ import Image from "next/image"
 import CustomButton from "./CustomButton"
 // import Logo from './Logo';
 import Logo from '../../../public/images/LFALogo.png';
+import styles from '../styles/NavBar.module.css'
 const NavBar = () => (
-    <header className="w-full absolute z-10">
+    <header className={styles.container}>
         <div className="bg-white rounded-lg shadow-md py-4 px-6 sm:px-16 max-w-[1440px] mx-auto">
             <nav className="flex justify-between items-center">
                 <Link href="/" className="flex items-center">
@@ -24,14 +25,14 @@ const NavBar = () => (
                 </h3>
                 {/* Navigation Links */}
                 <div className="flex space-x-6">
-                    <Link href="/" className="text-gray-800 hover:text-gray-600">Home</Link>
-                    <Link href= "/about" className="text-gray-800 hover:text-gray-600">About</Link>
-                    <Link href="/whatwedo" className="text-gray-800 hover:text-gray-600">What We Do</Link>
-                    <Link href="/leadership" className="text-gray-800 hover:text-gray-600">Our Leadership</Link>
-                    <Link href="/projects" className="text-gray-800 hover:text-gray-600">Projects</Link>
-                    <Link href="/blog" className="text-gray-800 hover:text-gray-600">Blog</Link>
-                    <Link href="/events" className="text-gray-800 hover:text-gray-600">Events</Link>
-                    <Link href="/contact" className="text-gray-800 hover:text-gray-60">Contact Us</Link>
+                    <Link href="/" className={styles.item}>Home</Link>
+                    <Link href= "/about" className={styles.item}>About</Link>
+                    <Link href="/whatwedo" className={styles.item}>What We Do</Link>
+                    <Link href="/leadership" className={styles.item}>Our Leadership</Link>
+                    <Link href="/projects" className={styles.item}>Projects</Link>
+                    <Link href="/blog" className={styles.item}>Blog</Link>
+                    <Link href="/events" className={styles.item}>Events</Link>
+                    <Link href="/contact" className={styles.item}>Contact Us</Link>
                 </div>
                 <div className="flex items-center">
                     <div className="bg-white rounded-[20px] p-2">
