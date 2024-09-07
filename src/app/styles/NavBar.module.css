@@ -7,6 +7,7 @@
     transition: transform 0.3s ease-in-out;
     background-color: #f8f9fa;
     text-align: center;
+    order: 1;
 }
 
 .logo:hover {
@@ -45,6 +46,7 @@
     justify-content: center;
     align-items: center;
     text-transform: uppercase;
+    order: 2;
 }
 
 .item:hover {
@@ -55,7 +57,8 @@
 /* Responsive Design */
 @media (max-width: 768px) {
     .logo {
-        width: 100%;
+        width: 50%;
+        position: relative;
     }
 
     .item {
