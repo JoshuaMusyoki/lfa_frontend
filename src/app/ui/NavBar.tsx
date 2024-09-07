@@ -23,8 +23,8 @@ const NavBar = () => {
                         <Image
                             src={Logo}
                             alt='lfa_logo'
-                            width={100}
-                            height={59}
+                            width={50}
+                            height={9}
                             className={styles.logo}
                         />
                     </Link>
@@ -45,6 +45,8 @@ const NavBar = () => {
                         <Link href="/blog" className={styles.item}>Blog</Link>
                         <Link href="/events" className={styles.item}>Events</Link>
                         <Link href="/contact" className={styles.item}>Contact Us</Link>
+                        <Link href="/jobs" className={styles.item}>Jobs</Link>
+                        
                         <div className="flex items-center mt-4 md:mt-0">
                             <div className="bg-white rounded-[20px] p-2">
                                 <CustomButton
